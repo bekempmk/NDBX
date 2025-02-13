@@ -65,7 +65,7 @@
     text-transform: uppercase;
   }
 
-  h1 {
+  .h1 {
     font-size: 42px;
     line-height: 1.2;
     margin: 10px 0;
@@ -112,6 +112,6 @@
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
-
+  
 
 
