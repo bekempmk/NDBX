@@ -501,12 +501,14 @@ p.right-align {
   max-width: 1009px; /* Оставим исходный размер */
   height: auto;
   margin: 0 auto; /* Центрируем изображение */
+ position: relative;
 }
 
 .furniture-cards .main-image {
   width: 100%;
   display: block;
   border-radius: 10px;
+  position: relative;
 }
 
 .furniture-cards .card {
@@ -527,16 +529,19 @@ p.right-align {
 .furniture-cards .card-1 {
   top: 10%;
   left: 5%;
+  position: absolute
 }
 
 .furniture-cards .card-2 {
   top: 30%;
   left: 60%;
+  position: absolute
 }
 
 .furniture-cards .card-3 {
   top: 50%;
   left: 10%;
+  position: absolute
 }
 
 
