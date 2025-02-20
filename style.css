@@ -26,9 +26,36 @@
     align-items: center;
   }
 
+  
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67.05px;
+    letter-spacing: 0%;
+    margin: 10px;
+    margin-top:10;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    margin:0;
+  
+}
+
   nav h1 {
-    font-weight: 600;
     color: #333;
+    font-weight: bold;
+    font-family: "SF Pro Display", sans-serif;  
+    font-weight: 900;  
+    font-size: 40px;  
+    line-height: 48px;  
+    letter-spacing: 1px;  
+    margin-top:0;
+
+
   }
 
   nav ul {
@@ -46,6 +73,31 @@
     font-weight: 500;
   }
 
+
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: absolute;
+    
+  } 
+
+  .icon-container01 {
+    width: 27;
+    height: 29.01689910888672;
+    top: 80.98px;
+    left: 1289px;
+    position: absolute;
+  }
+  
+  .icon-container {
+    width: 18;
+    height: 21.493995666503906;
+    top: 84.2px;
+    left: 1186px;
+    border-width: 2px;
+    position: absolute;
+  }
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,75 +106,113 @@
     background: #f5f5f5;
   }
 
-  .hero-text {
-    max-width: 500px;
-  }
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 67.05px; 
+  letter-spacing: 0%; 
+  text-align: left; 
+  padding-left: 20px; 
+  margin-right: 10px;
+ 
+}
 
-  .tagline {
-    color: #ff5a5f;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
+.tagline {
+  color: #ff5a5f;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700; 
+  font-size: 20px;
+  letter-spacing: 0%; 
+  text-align: left;
+  display: block; 
+  padding-left: 20px;
+
+}
 
   .h1 {
     font-size: 42px;
     line-height: 1.2;
-    margin: 10px 0;
+    margin-top:0px;
   }
 
-  .buttons {
-    margin-top: 20px;
-  }
+ .buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px; 
+}
 
-  .discover-btn,
-  .watch-video-btn {
-    background: #ff5a5f;
-    border: none;
-    color: white;
-    padding: 12px 24px;
-    margin-right: 15px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s;
-  }
+.discover-btn,
+.watch-video-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.82px;
+  letter-spacing: 0%;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex; 
+  align-items: center; 
+}
 
 
-  .discover-btn:hover {
-    background: #ff3b3f;
-  }
+.discover-btn {
+  background: #ff5a5f;
+  color: white;
+  border: none;
+  margin-right: 15px;
+}
 
-  .watch-video-btn {
-    background: transparent;
-    color: #333;
-    border: 2px solid #333;
-  }
+.discover-btn:hover {
+  background: #ff3b3f;
+}
 
-  .watch-video-btn:hover {
-    background: #333;
-    color: white;
-  }
+.watch-video-btn {
+  background: transparent;
+  color: #333;
+  border: none;
+}
 
-  .hero-image img {
-    width: 465px;
-    height: 698px;
-    position: absolute;
-    top: 208px;
-    left: 837px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
+.watch-video-btn:hover {
+  background: #333;
+  color: white;
+}
 
-  .Vector-icon img .favicon-icon {
-    width: 465px;
-    height: 698px;
-    border-radius: 12px;
-    position: absolute; 
-    top: 208px;
-    left: 837px;
-  }
-  
+
+
+.play-icon {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.play-icon::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid black;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-icon {
+  width: 15px;
+  height: 15px;
+  background: url('path-to-play-icon.png') no-repeat center center;
+  background-size: contain;
+  margin-right: 10px; 
+  display: inline-block;
+  vertical-align: middle;
+} 
   .rectangle5   {
     width: 35px;
     height: 264px;
@@ -134,100 +224,537 @@
   }
 
 
-
-
-.play-icon {
-    width: 24px;
-    height: 24px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    position: relative;
+/* .hero-image img {
+  position: absolute;
+  width: 465px; 
+  height: 698px;
+  top: 208px;
+  left: 837px;
+  z-index: 2; 
 }
 
 
-.play-icon::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 6px solid black;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.back-photo, .back-photo01 {
+  position: absolute;
+  z-index: 1; 
 }
 
-.read-more-btn {
-  width: 230px;
-  height: 78px;
-  background-color: #ff5c5c;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
+
+.back-photo {
+  width: 318px;
+  height: 202px;
+  top: 226px;
+  left: 1062px;
+}
+
+.back-photo01 {
+  width: 451px;
+  height: 702px;
+  top: 273px;
+  left: 887px;
+}
+ */
+
+
+ .image-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start
+ }
+
+.hero-image img {
+  position: absolute;
+  width: 465px; 
+  height: 698px;
+  top: 08px;
+  right: 1; 
+  z-index: 2; 
+  justify-content: flex-end; 
+  align-items: flex-start
+}
+
+.back-photo, .back-photo01 {
+  position: absolute;
+  z-index: 1; 
+  justify-content: flex-end; 
+  align-items: flex-start
+}
+
+.back-photo {
+  width: 318px;
+  height: 202px;
+  top: 226px;
+  right: 0; 
+  justify-content: flex-end; 
+  align-items: flex-start
+}
+
+.back-photo01 {
+  width: 451px;
+  height: 702px;
+  top: 273px;
+  right: 120px; 
+  justify-content: flex-end; 
+  align-items: flex-start
+}
+
+
+
+
+.right-align {
+  text-align: right; /* Выровнять текст по правому краю */
+  padding-top: 20px; /* Отступ сверху */
+  padding-right: 50px; /* Немного отступа справа */
+  position: relative; /* Используем для позиционирования */
+  top: 300px; /* Сдвигаем элемент вниз */
+}
+
+
+h1.right-align {
+  font-size: 60px;
+  line-height: 73.14px;
+  color: #000;
+  text-align: right;
+  margin-top: 50px; 
+  padding-top: 20px; 
+  position: relative;
+  top: 300px;
+  align-items: flex-end; /* Весь текст прижмётся к правому краю */
+  padding-right: 50px; /* Немного отступа от края */
+} 
+ 
+ h2.right-align {
+  font-size: 60px;
+  line-height: 73.14px;
+  color: transparent;
+  text-align: right;
+  
+  padding-top: 20px;
+-webkit-text-stroke: 2px black; 
+ }
+
+
+p.right-align {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30.01px;
+  color: #666;
+  position: relative;
+  text-align: right;
+  padding-right: 50px; 
+} 
+/* 
+.image-2 img {
+  position: absolute;
+  width: 483;
+  height: 723;
+  top: 945px;
+  left: 100px;
+  margin: 30px;
+}
+ */
+
+.button-Readmore {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 15px; 
+  margin-top: 350px;
+  padding-right: 50px; 
+}
+
+.button-Readmore button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.82px;
+  letter-spacing: 0%;
+  padding: 12px 24px;
+  border-radius: 30px;
   cursor: pointer;
+  border: none;
+  background: #ff3b3f; 
+  color: white;
+}
+
+
+
+
+
+
+
+
+.image-wrapper {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-end; 
+  height: 100vh; 
+  height: 100vh;
+  padding-left: 50px;
+  transform: translateY(-500px); 
+}
+
+.image-container {
+  position: relative;
+  width: 350px; 
+  height: 500px;
+}
+
+
+.image-container img {
+  position: absolute;
+}
+
+
+.bg-image {
+  width: 120%;
+  height: auto;
+  bottom: -30px;
+  left: -10%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  z-index: 3;
+}
+
+.bg-left {
+  width: 80px;
+  height: 180px;
+  left: -40px;
+  top: 50px;
+  background: black;
+  z-index: 2;
+}
+
+.bg-right {
+  width: 100px;
+  height: 250px;
+  right: -50px;
+  top: 100px;
+  background: black;
+  z-index: 2;
+}
+
+
+
+.furniture-section h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121.9px;
+    letter-spacing: 0%;
+    color: white;
+    -webkit-text-stroke: 2px black; 
+    margin: 0;
+}
+
+.furniture-section h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48.76px;
+  letter-spacing: 0%;
+  color: black;
+  margin: 0;
+}
+
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48.76px;
+  letter-spacing: 0%;
+  color: black;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 121.9px;
+  letter-spacing: 0%;
+  color: white; /* Делаем текст прозрачным */
+  -webkit-text-stroke: 2px black; /* Черная обводка */
+}
+
+
+
+.furniture-cards {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Ограничим максимальную ширину */
+  margin: 0 auto; /* Центрируем контейнер */
+  padding: 50px 0; /* Добавим отступ сверху и снизу */
+}
+
+.furniture-cards .image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1009px; /* Оставим исходный размер */
+  height: auto;
+  margin: 0 auto; /* Центрируем изображение */
+}
+
+.furniture-cards .main-image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.furniture-cards .card {
+  position: absolute; /* Карточки будут поверх изображения */
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Фиксированная ширина */
+  height: 150px; /* Фиксированная высота */
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
-.read-more-btn:hover {
-  background-color: #e04848;
+/* Позиционирование карточек */
+.furniture-cards .card-1 {
+  top: 10%;
+  left: 5%;
 }
 
-.image-2 {
-  width: 483px;
-   height: 723px;
-   top: 1225px;
-   left: 100px;
- }
- 
- 
+.furniture-cards .card-2 {
+  top: 30%;
+  left: 60%;
+}
+
+.furniture-cards .card-3 {
+  top: 50%;
+  left: 10%;
+}
 
 
- body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+
+
+
+
+
+
+/* 
+.buttons { 
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 0;
+  top: 0; 
+  z-index: 10; 
+} */
+
+/* .product-card {
+  width: 278px;
   text-align: center;
-}
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+} */
+
+/* 
+.subtitle {
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 121.9px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}  */
+
+
+
+
 .container {
   width: 80%;
-  margin: 0 auto;
-}
-h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-}
-.highlight {
-  color: grey;
-}
-.image-container {
+  margin: auto;
   position: relative;
+  padding-top: 50px;
+}
+
+/* Заголовки */
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48.76px;
+  color: black;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 121.9px;
+  color: white;
+  -webkit-text-stroke: 2px black; /* Обводка текста */
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; /* Добавляем отступ вниз, чтобы карточки не прилипали */
+  gap: 20px;
+}
+
+.button {
+  width: 48px;
+  height: 48px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.button img {
+  width: 7px;
+  height: 13px;
+}
+
+.button .secondary-icon {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.button.next img {
+  transform: rotate(180deg);
+}
+
+/* Карточки теперь внизу */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px; /* Увеличил отступ, чтобы карточки были ниже кнопок */
+  position: relative;
+}
+
+.product-card {
+  width: 278px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%;
+  height: 312px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: white;
+}
+
+.text-container01 {
+  max-width: 50%;
+}
+
+.large-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 121.9px;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+
+.outline {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+}
+
+.button-Explore {
   margin-top: 20px;
 }
-.image-container img {
-  width: 100%;
-  border-radius: 10px;
+
+.button-Explore button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31.69px;
+  letter-spacing: 0%;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  background: #ff3b3f;
+  color: white;
 }
-.feature-box {
-  position: absolute;
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.line {
+  width: 1700px;
+  height: 2px;
+  background: black;
+  margin-top: 60px;
 }
-.feature-1 { top: 10%; left: 5%; }
-.feature-2 { top: 5%; right: 10%; }
-.feature-3 { bottom: 5%; left: 10%; }
 
 
 
 
- 
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background: #f8f8f8;
+    gap: 50px;
+  }
+
+  .footer-section {
+    max-width: 270px;
+    padding: 10px;
+  }
+
+  .footer-title {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31.2px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+
+  .footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
